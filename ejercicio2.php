@@ -1,0 +1,15 @@
+<?php 
+
+
+
+
+
+?>
+
+<!-- Utiliza el código del ejercicio 1 para crear una clase Trabajador que extienda a persona.
+Añade un atributo que será el nombre de la empresa en que trabaja.
+Añade los métodos consultores y modificadores.
+Crea un constructor con todos los parámetros necesarios.
+Crea un método mostrar que llame al método mostrar de la clase padre.
+Crea un método mostrarCompleto que muestre toda la información del trabajador.
+Prueba. -->
