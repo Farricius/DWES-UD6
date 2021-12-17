@@ -70,26 +70,35 @@ class Persona
     {
         $this->altura = $altura;
     }
-}
 
-    $humano = new Persona();
-    $humano = setNombre('Pepito');
-    $humano = setDni('213SKD');
-    $humano = setSexo ('H');
-    $humano = setPeso (70);
-    $humano = setAltura (175);
-
-
+    // $humano = new Persona();
+    // $humano = setNombre('Pepito');
+    // $humano = setDni('213SKD');
+    // $humano = setSexo ('H');
+    // $humano = setPeso (70);
+    // $humano = setAltura (175);
 
     // Fuera clase -> Mostrar y llamada constructor
 
-    function mostrar () {
-        echo "nombre: " . $this->$humano.getNombre + "dni: " . $this->$humano.getDni + "sexo: " . $this->$humano.getSexo + "peso: " . $this->$humano.getPeso + "altura: " + $this->$humano.getAltura;
-        // echo $this->$humano.getDni;
-        // echo $this->$humano.getSexo;
-        // echo $this->$humano.getPeso;
-        // echo $this->$humano.getAltura;
+    function mostrar()
+    {
+        //echo "nombre: " . $this->$humano.getNombre . $this->$humano.getDni . $this->$humano.getSexo . $this->$humano.getPeso . $this->$humano.getAltura
+        return "nombre: " . $this->nombre . "dni: " . $this->dni . "sexo: " . $this->sexo . "peso: " . $this->peso . "altura: " . $this->altura;
     }
+
+    function __toString()
+    {
+        return "nombre: " . $this->nombre . "dni: " . $this->dni . "sexo: " . $this->sexo . "peso: " . $this->peso . "altura: " . $this->altura;
+    }
+}
+
+$px1 = new Persona("juan", "231313k", "mujer", 60, 180);
+
+echo $p1;
+
+$px1 = new Persona("juan", "231313k", "mujer", 60, 180);
+
+echo $p1;
 
 
 ?>
