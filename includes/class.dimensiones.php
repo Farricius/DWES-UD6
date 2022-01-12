@@ -5,39 +5,44 @@ class Dimensiones
     private float $ancho;
     private float $largo;
 
-    function getAlto()
-    {
-        return $this->alto;
-    }
+    // function getAlto()
+    // {
+    //     return $this->alto;
+    // }
 
-    public function setAlto($alto)
-    {
-        $this->alto = $alto;
-    }
+    // public function setAlto($alto)
+    // {
+    //     $this->alto = $alto;
+    // }
 
-    function getAncho()
-    {
-        return $this->ancho;
-    }
+    // function getAncho()
+    // {
+    //     return $this->ancho;
+    // }
 
-    function setAncho($ancho)
-    {
-        $this->ancho = $ancho;
-    }
+    // function setAncho($ancho)
+    // {
+    //     $this->ancho = $ancho;
+    // }
 
-    function getLargo()
-    {
-        return $this->largo;
-    }
+    // function getLargo()
+    // {
+    //     return $this->largo;
+    // }
 
-    function setLargo($largo)
-    {
-        $this->largo = $largo;
-    }
+    // function setLargo($largo)
+    // {
+    //     $this->largo = $largo;
+    // }
+
+    // public function __get($atributo)
+    // {
+    //     return $this->$atributo;
+    // }
 
     public function __get($atributo)
     {
-        return $this->$atributo;
+        return "El valor de atributo es: " . $this->$atributo; //ex
     }
 
     public function __set($atributo, $valor)
@@ -48,14 +53,14 @@ class Dimensiones
                 if ($valor > 1 && is_float($valor))
                     $this->$atributo = $valor;
                 else
-                echo "Valor ALTO debe ser 1 o más";
+                    echo "Valor ALTO debe ser 1 o más";
                 break;
 
             case "ancho":
-                if ($valor > 1 && is_float($valor)) 
+                if ($valor > 1 && is_float($valor))
                     $this->$atributo = $valor;
                 else
-                echo "Valor ANCHO debe ser 1 o más";
+                    echo "Valor ANCHO debe ser 1 o más";
                 break;
 
             case "largo":
@@ -77,6 +82,6 @@ class Dimensiones
     public function __toString()
     {
         //return "Alto=<"getAlto()">, ancho=<"getAncho()">, largo=<"getAncho()">";
-        return "Alto = <.$this->alto.>, Ancho = <.$this->ancho.>, Largo = <.$this->largo.>";
+        return "Alto = <$this->alto>, Ancho = <$this->ancho>, Largo = <$this->largo>";
     }
 }
