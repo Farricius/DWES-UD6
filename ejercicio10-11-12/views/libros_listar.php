@@ -4,7 +4,7 @@
     </head>
     <body>
         <h1>Libros dados de alta en nuestra libreria</h1>
-        <table border="1">
+        <table border="2">
         <tr>
             <th>TITULO</th>
             <th>PRECIO</th>

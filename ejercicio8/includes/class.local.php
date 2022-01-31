@@ -18,7 +18,7 @@ class Local
             die();
         }
 
-        if (is_string($ciudad))
+        if (is_string($calle))
             $this->calle = $calle;
         else {
             echo "Calle debe ser texto";
@@ -45,11 +45,11 @@ class Local
         return $this->dimensiones;
     }
 
-    // public function __get($atributo)
-    // {
-    //     return "El valor de atributo es: " . $this->$atributo;
-    // }
-
+    public function __set($variable, $valor)
+    {
+        $this->$variable = $valor;
+    }
+    
     public function __toString()
     {
         return "<p>Ciudad: $this->ciudad <br></p><p> Calle: $this->calle <br></p><p>Plantas: $this->numeroPlantas <br></p><p>Dimensiones: $this->dimensiones<br></p>";
